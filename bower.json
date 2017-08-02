@@ -1,0 +1,21 @@
+{
+  "name": "stolen-bikes",
+  "description": "an app for finding statistics about bikes in an area",
+  "main": "index.js",
+  "authors": [
+    "larry and max"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
