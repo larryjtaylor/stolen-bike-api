@@ -12,18 +12,19 @@
       <div class="jumbotron">
         <h1>Bike Stolen? Find it Here.</h1>
       </div>
-      <form id="bike-search" action="index.html" method="post">
+      <form id="bike-search">
         <div class="form-group">
-          <input id="manufacturer" type="text" name="manufacturer">
-        </div>
-        <!-- <div class="form-group">
-          <input id="color" type="text" name="color">
+          <label for="manufacturer">Enter a manufacturer:</label>
+          <input id="manufacturer" type="text" name="manufacturer" placeholder="ex: Huffy" required>
         </div>
         <div class="form-group">
-          <input id="location" type="text" name="location">
-        </div> -->
+          <label for="location">Enter a city to search in:</label>
+          <input id="location" type="text" name="location" placeholder="ex: Topeka, KS" required>
+        </div>
+
         <button type="submit" class="button">Search</button>
       </form>
+      <div id="result"></div>
     </div>
   </body>
 </html>
