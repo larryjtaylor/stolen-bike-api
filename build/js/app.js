@@ -57,13 +57,13 @@ var displayData = function(results) {
 function drawMap() {
   var Portland = {lat: 45.5207, lng: -122.677397};
   var mapObject = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
+    zoom: 11,
     center: Portland,
     mapTypeId: 'terrain'
   });
   var marker = new google.maps.Marker({
     position: Portland,
-    map: map
+    map: mapObject
   });
 }
 
