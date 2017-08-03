@@ -1,8 +1,9 @@
 var BikeModule = require('./../js/bike.js').bikeModule;
 
 var displayData = function(results) {
+  console.log(results);
   results.forEach(function(result) {
-    $('#result').append("<li>" + result.title + "</li>");
+    $('#result').append("<li>A " + result.title + " was taken from " + result.stolen_location + " .</li>");
   });
 };
 $(document).ready(function() {
@@ -12,6 +13,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var manufacturer = $('#manufacturer').val();
-    bikeModule.getData(manufacturer, displayData);
+    var location = $('#location').val();
+    bikeModule.getData(manufacturer, location, displayData);
   });
 });
