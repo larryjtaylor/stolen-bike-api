@@ -4,7 +4,7 @@ var BikeModule = require('./../js/bike.js').bikeModule;
 var displayData = function(results) {
   // console.log(results);
   results.forEach(function(result) {
-    $('#result').append("<li>A " + result.title + " was taken from " + result.stolen_location + " .</li>");
+    $('#result').append("<li>A " + result.title + " was taken from " + result.stolen_location + ".</li>");
   });
 };
 

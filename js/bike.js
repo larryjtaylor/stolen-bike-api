@@ -33,7 +33,7 @@ BikeModule.prototype.getZip = function(manufacturer, location, displayData) {
       for(var i = 0; i < zipArray.length; i++){
         $.get("http://maps.googleapis.com/maps/api/geocode/json?address=" + zipArray[i])
         .then(function(response) {
-          // console.log(response.results[0].geometry);
+          console.log(response.results);
           var latitude = response.results[0].geometry.location.lat;
           var longitude = response.results[0].geometry.location.lng;
           var marker = new google.maps.Marker({

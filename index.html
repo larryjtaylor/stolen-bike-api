@@ -9,10 +9,17 @@
     <title>Bike Limbo</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Bike Stolen? Find it Here.</h1>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/../scss/img/bike.png" id="bike" />
+        </div>
+        <div class="col-md-8">
+          <h1>Bike Stolen? Find it Here.</h1>
+        </div>
       </div>
+    </div>
+    <div class="container">
       <form id="bike-search">
         <div class="form-group">
           <label for="manufacturer">Enter a manufacturer:</label>
@@ -23,7 +30,7 @@
           <input id="location" type="text" name="location" placeholder="ex: Portland, OR" required>
         </div>
 
-        <button type="submit" class="button">Search</button>
+        <input type="image" class="button" src="/../scss/img/search.jpg" alt="" />
       </form>
       <div id="map"></div>
       <ul id="result"></ul>
